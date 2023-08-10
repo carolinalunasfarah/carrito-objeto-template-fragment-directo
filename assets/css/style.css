@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+/* fruits card */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fruits {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 10rem;
+    min-height: 8rem;
+    border: 2px solid rgba(98, 0, 255, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.btnAdd {
+    height: 2rem;
+    width: 5rem;
+    font-size: 16px;
+    background-color: rgba(98, 0, 255, 0.5);
+    border: none;
+    border-radius: 1rem;
+}
+
+/* cart fruits, price and quantity */
+.cartCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 32rem;
+    min-height: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(98, 0, 255, 0.5);
+    border-radius: 1rem;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    background-color: rgba(98, 0, 255, 0.2);
+    font-size: 18px;
+    border-radius: 1rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 32rem;
+    min-height: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(98, 0, 255, 0.5);
+    border-radius: 1rem;
+}

@@ -1,66 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping cart 🛒</title>
+        <!-- css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <section class="container">
+            <section class="fruits">
+                <article class="card">
+                    <h3>Strawberry 🍓</h3>
+                    <p class="price">$300</p>
+                    <button
+                        class="btnAdd"
+                        data-fruit="Strawberry"
+                        data-price="$300">
+                        Add
+                    </button>
+                </article>
+                <article class="card">
+                    <h3>Banana 🍌</h3>
+                    <p class="price">$500</p>
+                    <button
+                        class="btnAdd"
+                        data-fruit="Banana"
+                        data-price="$500">
+                        Add
+                    </button>
+                </article>
+                <article class="card">
+                    <h3>Apple 🍎</h3>
+                    <p class="price">$600</p>
+                    <button class="btnAdd" data-fruit="Apple" data-price="$600">
+                        Add
+                    </button>
+                </article>
+            </section>
+        </section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jugando con DOM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
+        <section class="container">
+            <ul class="listGroup" id="cart"></ul>
+        </section>
 
-<body>
-
-    <main class="container mt-5">
-
-        <div class="row text-center">
-
-            <article class="col-sm-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Frutilla 🍓</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Frutilla">Agregar</button>
+        <template id="template">
+            <section class="cartCard">
+                <li class="listItem">
+                    <span class="badge">14</span>
+                    <span class="lead">A list item</span>
+                </li>
+                <li class="listItem">
+                    <div>
+                        <p class="total">
+                            Total: $<span id="totalPrice">1500</span>
+                        </p>
                     </div>
-                </div>
-            </article>
+                    <section>
+                        <button id="btnAddItem">Add</button>
+                        <button id="btnRemoveItem">Remove</button>
+                    </section>
+                </li>
+            </section>
+        </template>
 
-            <article class="col-sm-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Banana 🍌</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Banana">Agregar</button>
-                    </div>
-                </div>
-            </article>
+        <footer>
+            <template id="footerTemplate">
+                <section class="footerCard">
+                    <section class="footerBody">
+                        <p class="totalPrice">Total: $<span>1500</span></p>
+                        <button id="finish">Finalize purchase</button>
+                    </section>
+                </section>
+            </template>
+        </footer>
 
-            <article class="col-sm-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Manzana 🍏</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-
-    </main>
-
-
-    <section class="container mt-3">
-        <ul class="list-group" id="carrito"></ul>
-    </section>
-
-    <template id="template">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            <span class="lead">Frutilla</span>
-            <span class="badge bg-primary rounded-pill">12</span>
-        </li>
-    </template>
-
-    <script src="app.js"></script>
-    <!-- <script src="recursivas.js"></script> -->
-</body>
-
+        <!-- script con array -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
