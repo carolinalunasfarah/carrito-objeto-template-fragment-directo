@@ -1,16 +1,5 @@
-# Ejemplo carrito de compras con objeto y template
+# Shopping cart with arrays and templates
 
-## Todo con fines educativos
-Si puedes mejorar el código, bienvenido!
+<a href="https://github.com/bluuweb/carrito-objeto-template-fragment-directo" target="_blank" rel="noopener noreferrer">Bluuweb Repositorie fork</a>
 
-## template
-```html
-<template id="template">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span class="lead">Frutilla</span>
-        <span class="badge bg-primary rounded-pill">12</span>
-    </li>
-</template>
-```
-
-## Ultima actualización
+<!-- <a href="https://github.com/bluuweb/carrito-objeto-template-fragment-directo" target="_blank" rel="noopener noreferrer">Shopping cart</a> -->
